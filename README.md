@@ -1,4 +1,4 @@
-# License for boms
+# Lbom (licenses for boms) is a tool for fetching license information for components in CycloneDX files
 
 Lbom is a powerful tool designed to fill license information for components in CycloneDX files. It automatically adds missing licenses to components, ensuring comprehensive license tracking for your software projects.
 
@@ -47,11 +47,11 @@ pip install lbom
 Here's an example of how you can use Lbom to fill license information in a CycloneDX file:
 
 ```
-# Bom is generated owasp cdxgen
+# Bom is generated using owasp cdxgen
 
 cd project_dir/
 cdxgen .
-lbom --input_file bom.json --output_file bom_with_licenses.json --notice_file bom_notices.txt
+lbom --input_file bom.json --output_file bom_with_licenses.json --notice_file bom_notices.txt --harvest
 
 ```
 
@@ -59,7 +59,7 @@ lbom --input_file bom.json --output_file bom_with_licenses.json --notice_file bo
 
 If output file is not specified, bom will be printed to stdout and errors to stderr.
 
-This command will fill missing license information in bom.json and save the result to bom_with_licenses.json. Additionally, it will queue scans for components with missing license information.
+This command will fill missing license information in bom.json and save the result to bom_with_licenses.json. Additionally, it will queue scans for components with missing license information. Harvesting missing components can take some time.
 
 ## Contribution
 If you'd like to contribute to Lbom, feel free to submit pull requests or open issues on GitHub.
