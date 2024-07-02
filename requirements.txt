@@ -1,0 +1,2 @@
+requests>=2.31.0
+packageurl-python>=0.14.0

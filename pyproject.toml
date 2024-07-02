@@ -1,0 +1,30 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+#install_requires=["requests==2.31.0", "packageurl-python==0.14.0"],
+#   entry_points={"console_scripts": ["lbom=lbom.main:main"]},
+
+[project]
+name = "lbom"
+version = "0.5"
+description = "A powerful tool filling licenses to CycloneDX files"
+readme = "README.md"
+authors = [{ name = "kaptain-ops" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["CycloneDX", "cdxgen", "clearlydefined","license"]
+dependencies = [
+    "requests >= 2.31.0",
+    "packageurl-python >= 0.14.0",
+]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/kaptain-ops/lbom"
+
+[project.scripts]
+lbom = "lbom.main:main"

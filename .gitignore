@@ -1,0 +1,8 @@
+bom.json
+NOTICES
+sbom.cdx.json
+src/__pycache__/
+lbom.egg-info/
+build/
+dist/
+venv/
