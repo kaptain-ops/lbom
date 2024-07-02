@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lbom"
-version = "0.5"
+version = "0.6"
 description = "A powerful tool filling licenses to CycloneDX files"
 readme = "README.md"
 authors = [{ name = "kaptain-ops" }]
